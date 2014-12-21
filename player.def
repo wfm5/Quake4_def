@@ -600,7 +600,6 @@ entityDef playerView_marine {
 entityDef player_marine 
 {
 	"spawnclass"						"idPlayer"
-
 	"hud"							"guis/hud.gui"
 	"mphud"							"guis/mphud.gui" // mphud is overlayed on hud in multiplayer
 	"cursor"						"guis/cursor.gui"
@@ -1054,9 +1053,10 @@ entityDef player_marine_mp
 {
 	"inherit"			"player_marine"
 
-	"weapon"			"weapon_machinegun,weapon_gauntlet"
+	"weapon"			"weapon_lightninggun,weapon_gauntlet"
 	"current_weapon"		"1"
 
+	"buffed"				"0"
 	// replce blaster with gauntlet in MP
 	"def_weapon0"						"weapon_gauntlet"
 	"weapon0_best"						"1"
@@ -1079,7 +1079,7 @@ entityDef player_marine_mp
 
 	"ammo_none"			"-1"
 	"ammo_railgun"			"0"
-	"ammo_machinegun"		"100"
+	"ammo_lightninggun"		"300"
 	"ammo_nailgun"			"0"
 	"ammo_blaster"			"-1"
 	"ammo_shotgun"			"0"
